@@ -59,4 +59,15 @@ Explanation: Displays the shell that is currently used
 
 Q4 Part 9:
 
-Command: 
+Command: uname -a > system_report.txt
+Command: cat system_report.txt
+Output: In screenshots
+
+Explanation: Captures processor architecture information and saves the output in system_report.txt file
+
+Q4 Part 10:
+
+Command: ncdu ~
+Output: In Screenshots
+
+Explanation: provides interactive disk usage analysis      
