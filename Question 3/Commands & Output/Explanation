@@ -1,1 +1,45 @@
+Q3 Part 1:
 
+Command: echo "This is sample text." > ~/sample_data.txt
+Command: cat ~/sample_data.txt
+Output: This is sample text.
+
+Explanation: It creates a file sample_data.txt in the home directory and 'echo' is used to write content in that file. 'Cat' is used to verfiy if content has been posted in the file or not.
+
+Q3 Part 2: 
+
+Command: ln ~/sample_data.txt ~/sample_hard.txt
+Command: ls
+Output: In Screenshots
+
+Explanation: created a hardlink which points to the same inode on the disk as that of ogininal file.
+
+Q3 Part 3:
+
+Command: ln -s ~/sample_data.txt ~/sample_soft.txt
+Command: ls
+Output: In Screenshots
+
+Explanation: Created a  soft link with a name sample_soft.txt which points to the filename of the original file but not the same inode.
+
+Q3 Part 4:
+
+Command: ls -i ~/sample_data.txt ~/sample_hard.txt ~/sample_soft.txt
+Output: 156907 sample_data.txt 156907 sample_hard.txt 156906 sample_soft.txt
+
+Explanation: It displays the inode number. Original file and hardlink shares the same inode number whereas softlink has different inode number.
+
+Q3 Part 5:
+
+Explanation: Original file and the hardlink share same inode. Original file and hardlink points to same data on the disk. inode stores the metadata of the file but not the filename.
+
+Q3 Part 6:
+
+Command: stat ~/sample_data.txt
+Output: In Screenshots
+
+Explanation: It shows the metadata of the file sample_data.txt like permission, ownership, file size, timestamps
+
+Q3 Part 7: 
+
+Command: 
