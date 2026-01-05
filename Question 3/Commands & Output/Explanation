@@ -42,4 +42,33 @@ Explanation: It shows the metadata of the file sample_data.txt like permission, 
 
 Q3 Part 7: 
 
-Command: 
+Command: du -sh ~
+Output: 82M      /home/kartik
+
+Explanation: It shows the summary of disk usage the total space occupied by home directory in human readable format
+
+Q3 Part 8:
+
+Command: ls -lh ~
+Output: total 60 ( In Screenshot)
+
+Explanation: ls lists all the files and lh lists then in long detailed format and converted sizes into kilobytes, megabytes.
+
+Q3 Part 9:
+
+Command: rm ~/sample_soft.txt
+Command: ls -l ~/sample_data.txt
+Command: cat ~/sample_data.txt
+Ouput: -rw-rw-r-- 2 kartik kartik 21 Jan 5 15:29 /home/kartik/sample_data.txt
+       This is sample text.
+
+Explanation: deleted the softlink file and checked that original file is still present with the original data.
+
+Q3 Part 10
+
+Command: du -h --max-depth=1 ~
+Command: df -h
+Output: In Screenshots
+
+Explanation: du shows disk space usage per directory. df shows disk space usage for all mounted filesystem
+
