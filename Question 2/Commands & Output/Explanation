@@ -1,1 +1,84 @@
+Q2 Part 1:
 
+Command: ls
+Command: mkdir ~/documents
+Command: ls
+Output: In Screenshot
+
+Explanation: 'ls' to see list of all files and folder in the current directory. 'mkdir ~/documents' creates a new directory documents in the home directory.
+
+Q2 Part 2:
+
+Command: cd ~/documents
+Command: touch plan.txt
+Command: ls
+Output: In Screenshot
+
+Explanation: 'cd ~/documents' changes the directory to documents 'touch plan.txt' creates an empty file plan.txt in the documents directory. 'ls' to confirm if plan.txt have been created in documents directory or not.
+
+Q2 Part 3:
+
+Command: echo "Remember to keep Repository Public" > plan.txt
+Command: cat plan.txt
+Output: Remember to keep Repository Public
+
+Explanation: 'echo "Remember to keep Repository Public" > plan.txt' creates a new file plan.txt and prints "Remember to keep Repository Public" in the file plan.txt. 'cat plan.txt' is used to see if the file has been printed with "Remember to keep Repository Public" message.
+
+Q2 Part 4:
+
+Command: ls -l plan.txt
+Output: -rw-rw-r-- 1 kartik kartik 35 Jan 5 14:43 plan.txt
+
+Explanation: Output displays permission, ownner, group, size and timestamp
+
+Q2 Part 5:
+
+Command: cp plan.txt plan_copy.txt
+Command: ls
+Output: In Screenshot
+
+Explanation: A copy of plan.txt has been created in the same directory with the name plan_copy.txt which has same content like plan.txt. 'ls' is used to verfiy if copy has been made or not
+
+Q2 Part 6
+
+Command: cd ~
+Command: mv documents project_documents
+Command: ls
+Output: In Screenshots
+
+Explanation: the documents directory has been renamed to project_documents the contents within it remains the same.
+
+Q2 Part 7
+
+Command: mkdir ~/project_documents/archive
+Command: cd project _documents 
+Command: ls
+Output: In screenshots
+
+Explanation: We have created subdirectory archive inside project_documents and sing 'ls' verifed it.
+
+Q2 Part 8
+
+Command: cd ~
+Command: mv ~/project_documents/plan_copy.txt ~/project_documents/archive/
+Command: cd project_documents
+Command: ls
+Command: cd archive
+Command: ls
+Output: In Screenshots
+
+Explanation: 'cd ~' to come back to home directory. we are moving the file plan_copy.txt from ~/project_documents to  ~/project_documents/archive and verifying if it is successful using the ls command
+
+Q2 Part 9
+
+Command: ls -R ~/project_documents
+Output: In Screenshots
+
+Explanation: It shows the files and subdirectories within the directory project_documents with their absolute path.
+
+Q2 Part 10
+
+Command: readlink -f ~/project_documents/archive/plan_copy.txt
+Output: /home/kartik/project_documents/archive/plan_copy.txt
+
+Explanation: It displays the absolute path of the file starting from root dirctory.
