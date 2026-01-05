@@ -1,1 +1,23 @@
+Q1 Part 1: 
+Command: whoami
+Output
+           groups
 
+Q1 Part 2: pwd
+           ls -la
+
+Q1 Part 3: echo "Linux user environment verified" > user_info.txt
+           cat user_info.txt
+
+Q1 Part 4: wc -m user_info.txt
+
+Q1 Part 5: man mkdir
+           ls
+           mkdir -p dir1/dir2
+           ls
+           cd dir1
+           ls
+
+Q1 Part 6: ls ~ | sort
+
+Q1 Part 7: 
