@@ -1,1 +1,81 @@
+Q1 Part 1:
 
+Command: whoami
+Output:  kartik
+Command: groups
+Output:  adm cdrom sudo dip plugdev users lpadmin
+
+Explanation:'whoami' displays the current username. 'groups' lists all the groups that this user belong to
+
+Q1 Part 2:
+
+Command: pwd
+Output: /home/kartik
+Command: ls -la
+Output: total 80 ( In the Screenshot)
+
+Explanation: 'pwd' shows the present working directory. 'ls -la' lists all the files in the current directory inluding the hidden files in a long format showing detailed attributes.
+
+Q1 Part 3: 
+
+Command: echo "Linux user environment verified" > user_info.txt
+Command: cat user_info.txt
+Output: Linux user environment verified
+
+Explanation: 'echo "Linux user environment verified" > user_info.txt' creates a new file user_info.txt with "Linux user environment verified" as text. 'cat user_info.txt' displays the contents of the file user_info.txt
+
+Q1 Part 4: 
+
+Command: wc -m user_info.txt
+Output: 32 user_info.txt
+
+Explanation: 'wc -m' counts the number of characters in a file. output shows 32 characters which includes the newline character also.
+
+Q1 Part 5:
+
+Command: man mkdir
+Command: ls
+Command: mkdir -p dir1/dir2
+Command: ls
+Command: cd dir1
+Command: ls
+Output: In Screenshot
+
+Explanation: "mkdir -p' helps to create parent directory and nested directory in one command. 'ls' lists all the files in the current directory. 'mkdir -p dir1/dir2' creates nested directory with dir1 as parent directory. 'cd dir1' moves us to dir1.
+
+Q1 Part 6: 
+
+Command: ls ~ | sort
+Output: In Screenshot
+
+Explanation: Displays all the files and folder in the home directory in the alphabetical order
+
+Q1 Part 7: 
+
+Command: grep "admin" log.txt
+Command: echo -e "admin login successful\nuser login failed\nadmin logout" > log.txt
+Output: admin login successful
+        admin logout
+
+Explanation: log.txt file didn't exist so created a file log.txt and 'echo -e' to print the text in the file and -e for using escape sequences \n
+
+Q1 Part 8:
+
+Command: uname -r
+Output: 6.14.0.37-generic
+
+Explanation: Displays the current kernel verison that is working on the system
+
+Q1 Part 9:
+
+Command: ping -c 5 www.google.com
+Output: In the screenshot
+
+Explanation: 5 ICMP packets were sent to www.google.com 0% packet loss confirms active internet connection.
+
+Q1 Part 10: 
+
+Command: uptime
+Output: 13:22:06 up 24min, 1 user, load average: 0.00, 0.02, 0.06
+
+Explanation: System is running from 24min and 1 user is logged in. average load for last 1min, 5min, 15mins is 0.00, 0.02, 0.06 respectively. 
