@@ -1,1 +1,62 @@
+Q4 Part 1:
 
+Command: uptime -p
+Output: up 3 hours, 21 minutes
+
+Explanation: Dispplays system uptime since last boot
+
+Q4 Part 2:
+
+Command: ps -u kartik
+Output: In Screenshots
+
+Explanation: It lists all the processes that are running under kartik
+
+Q4 Part 3:
+
+Command: top
+Output: In Screenshots
+
+Explanation: Shows the processes that consume maximum resources at the top
+
+Q4 Part 4:
+
+Command: sleep 100 &
+Command: jobs
+Output: [1] 5429
+        [1]+ Running     sleep 100 &
+
+Explanation: started a command in the background using '&' and used jobs to verify if the command is running or not.
+
+Q4 Part 5:
+
+Command: nice -n 10 sleep 100 &
+Command: ps -o pid,ni,comm
+Output: In Screenshot
+
+Explanation: started a command low low priority using nice command. used ps command to display the priority of the sleep command
+
+Q4 Part 6:
+
+Command: free -h
+Output: In Screenshots
+
+Explanation: shows total RAM, used RAM, free RAM, available RAM, shared, buffer/cache.
+
+Q4 Part 7:
+
+Command: df -h ~
+Output: In Screenshots
+
+Explanation: Specifies the filesystem partition where user data resides and disk space available and consumed
+
+Q4 Part 8:
+
+Command: echo $SHELL
+Output: /bin/bash
+
+Explanation: Displays the shell that is currently used
+
+Q4 Part 9:
+
+Command: 
